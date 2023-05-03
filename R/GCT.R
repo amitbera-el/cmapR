@@ -58,7 +58,9 @@ methods::setValidity("GCT",
                          return("cid must be unique")
                        }
                        if (any(duplicated(rid))) {
-                         return("rid must be unique")
+                        print(rid)
+                        print("##########################")
+                        return("rid must be unique")
                        }
                        if (nrow(cdesc) != ncols & nrow(cdesc) != 0) {
                          return(paste(
