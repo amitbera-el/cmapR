@@ -58,8 +58,8 @@ methods::setValidity("GCT",
                          return("cid must be unique")
                        }
                        if (any(duplicated(rid))) {
-                        print(paste("Duplicate row IDs found in column:",
-                                    colnames(m)[which(duplicated(rid))]))
+                        print(rid)
+                        print(class(rid))
                         return("rid must be unique")
                        }
                        if (nrow(cdesc) != ncols & nrow(cdesc) != 0) {
